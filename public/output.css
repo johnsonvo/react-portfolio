@@ -764,6 +764,10 @@ video {
   height: 350px;
 }
 
+.h-64{
+  height: 16rem;
+}
+
 .max-h-\[400px\]{
   max-height: 400px;
 }
@@ -802,6 +806,10 @@ video {
 
 .w-2\/5{
   width: 40%;
+}
+
+.w-10\/12{
+  width: 83.333333%;
 }
 
 .max-w-\[400px\]{

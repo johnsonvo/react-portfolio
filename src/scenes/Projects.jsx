@@ -24,10 +24,7 @@ const Project = ({ title, subtitle }) => {
     <motion.div variants={projectVariant} className='relative'>
       <div className={overlayStyles}>
         <p className='text-2xl font-playfair'>{title}</p>
-        <p className='mt-7'>
-          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla
-          porttitor accumsan tincidunt.
-        </p>
+        <p className='mt-7'>{subtitle}</p>
       </div>
       <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
     </motion.div>
@@ -64,6 +61,8 @@ const Projects = () => {
         </p>
       </motion.div>
 
+      {/* TODO add subtitles and links to projects  */}
+
       {/* PROJECTS */}
       <div className='flex justify-center'>
         <motion.div
@@ -74,29 +73,14 @@ const Projects = () => {
           viewport={{ once: true, amount: 0.2 }}
         >
           {/* ROW 1 */}
-          <div
-            className='flex justify-center text-center items-center p-10 bg-red
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold'
-          >
-            BEAUTIFUL USER INTERFACES
-          </div>
-          <Project title='Project 1' />
-          <Project title='Project 2' />
+          <Project title='Project 1' subtitle='Words are here' />
+          <Project title='Project 2' subtitle='' />
+          <Project title='Project 3' subtitle='' />
 
           {/* ROW 2 */}
-          <Project title='Project 3' />
-          <Project title='Project 4' />
-          <Project title='Project 5' />
-
-          {/* ROW 3 */}
-          <Project title='Project 6' />
-          <Project title='Project 7' />
-          <div
-            className='flex justify-center text-center items-center p-10 bg-blue
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold'
-          >
-            SMOOTH USER EXPERIENCE
-          </div>
+          <Project title='Project 4' subtitle='' />
+          <Project title='Project 5' subtitle='' />
+          <Project title='Project 6' subtitle='' />
         </motion.div>
       </div>
     </section>

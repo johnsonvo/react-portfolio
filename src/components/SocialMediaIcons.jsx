@@ -16,8 +16,8 @@ const SocialMediaIcons = () => {
         rel='noreferrer'
       >
         <img
-          alt='linkedin-link'
-          src='../assets/linkedin.png' /* TODO fix second linkedin icon to a github icon */
+          alt='github-link'
+          src='../assets/github.png' /* TODO fix second linkedin icon to a github icon */
         />
       </a>
     </div>
